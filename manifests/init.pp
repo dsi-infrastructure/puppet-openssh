@@ -25,8 +25,8 @@ class openssh {
   }
 
   service { 'ssh':
-    ensure  => running,                                                                 
-    enable  => true,                                                                    
-    require => Package['openssh-server'],                                                        
+    ensure  => running,
+    enable  => true,
+    require => Package['openssh-server'],
   }
 }
